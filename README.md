@@ -160,4 +160,4 @@ Support
 💬 Discussions
 
 
-Made with ❤ ️ by Rokai-Jib, using Claude AI Sonnet 5
+Made with ❤ ️ by Rokai-Jibe, using Claude AI Sonnet 5
