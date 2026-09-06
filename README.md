@@ -50,7 +50,7 @@ python3 src/tttool_gui.py
 5. Apply changes and save the modified file
 
 ### Building from Source
-See [BUILDING.md] (https://github.com/Rokai-Jibe/tiptoi-reveng-gui/blob/main/BUILDING.md) for detailed instructions on building the macOS app bundle.
+See [BUILDING.md](https://github.com/Rokai-Jibe/tiptoi-reveng-gui/blob/main/BUILDING.md) for detailed instructions on building the macOS app bundle.
 
 ### Project Structure
 ```bash
@@ -94,4 +94,4 @@ cabal : Build tttool from source
 ### License
 MIT License - see LICENSE file
 Author
-Rokai-Jibe - [GitHub Profile] (https://github.com/Rokai-Jibe) - with the full help of Claude Sonnet 5
+Rokai-Jibe - [GitHub Profile](https://github.com/Rokai-Jibe) - with the full help of Claude Sonnet 5
