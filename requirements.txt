@@ -1,0 +1,5 @@
+# GUI framework
+tkinter  # Included with Python on most systems
+
+# For building executable bundles
+PyInstaller==6.22.2
