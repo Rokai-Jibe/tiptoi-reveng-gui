@@ -2,8 +2,6 @@
 
 A graphical interface for working with the [tiptoi reverse-engineering ecosystem](https://github.com/entropia/tip-toi-reveng). The project is maintained by **Rokai-Jibe** and is intended to make common inspection, conversion, and development tasks more approachable than a command-line-only workflow.
 
-> **Project status:** This README is designed to be copied directly into the repository. Keep the command names and screenshots synchronized with the implementation as the project evolves.
-
 ## Download
 
 Packaged builds are published on the [GitHub Releases page](https://github.com/Rokai-Jibe/tiptoi-reveng-gui/releases). Choose the asset for your platform:
