@@ -14,6 +14,14 @@ import json
 import threading
 import platform
 
+if os.name == 'posix':
+    try:
+        from PIL import Image, ImageTk
+        icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
+        # Cette partie sera utilisée plus tard dans le code Tkinter
+    except ImportError:
+        pass
+
 # Config file storing the user-selected tttool path
 CONFIG_PATH = os.path.expanduser("~/.tttool_gui_config.json")
 
