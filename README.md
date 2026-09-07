@@ -15,6 +15,10 @@ A cross-platform graphical interface for [tttool](https://github.com/entropia/ti
 - Generate OID codes
 - Full support for all tttool operations
 
+## Screenshots
+
+![Main Interface](docs/screenshots/main-interface.png)
+
 🎯 **Cross-platform** (macOS with standalone app bundle)
 
 ⚙️ **Flexible configuration** with external config files
