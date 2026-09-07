@@ -44,3 +44,4 @@ venv/
 
 # Config (user-specific)
 .tttool_gui_config.json
+src/tttool_gui_backup.py

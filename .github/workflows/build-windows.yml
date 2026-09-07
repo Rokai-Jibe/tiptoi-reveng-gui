@@ -1,0 +1,44 @@
+name: Build Windows Executable
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub interface
+  push:
+    tags:
+      - 'v*'  # Automatically triggers on version tags like v1.0.1
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyinstaller pillow
+
+      - name: Build executable with PyInstaller
+        run: |
+          cd src
+          pyinstaller --onedir --windowed --name TiptoiRevengGUI --icon=icon.ico tttool_gui.py
+
+      - name: Copy tttool.exe and DLLs into dist folder
+        run: |
+          Copy-Item -Path "src\tttool-windows\*" -Destination "src\dist\TiptoiRevengGUI\" -Recurse -Force
+
+      - name: Create ZIP archive
+        run: |
+          cd src\dist
+          Compress-Archive -Path TiptoiRevengGUI -DestinationPath TiptoiRevengGUI-windows.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TiptoiRevengGUI-windows
+          path: src/dist/TiptoiRevengGUI-windows.zip

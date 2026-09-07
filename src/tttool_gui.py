@@ -29,8 +29,8 @@ def get_base_dir():
     """Return the directory where the script or frozen executable lives."""
     if getattr(sys, "frozen", False):
         # Running as a PyInstaller bundle
-        # In .app bundles, sys._MEIPASS is the temp extraction dir
-        return sys._MEIPASS
+        # Use the directory of the actual .exe, not the temp extraction dir
+        return os.path.dirname(sys.executable)
     return os.path.dirname(os.path.abspath(__file__))
 
 def get_tttool_binary_name():
