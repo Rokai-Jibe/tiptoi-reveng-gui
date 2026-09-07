@@ -8,7 +8,6 @@ Packaged builds are published on the [GitHub Releases page](https://github.com/R
 
 - [macOS download](https://github.com/Rokai-Jibe/tiptoi-reveng-gui/releases) — look for the macOS archive or installer.
 - [Windows download](https://github.com/Rokai-Jibe/tiptoi-reveng-gui/releases) — look for the Windows installer or `.zip` archive.
-- [Linux download](https://github.com/Rokai-Jibe/tiptoi-reveng-gui/releases) — look for the Linux archive or executable.
 
 If no packaged asset is available for your platform, [run the application from source](#building-from-source).
 
@@ -18,7 +17,6 @@ If no packaged asset is available for your platform, [run the application from s
 - Project/file selection instead of repeatedly entering long command-line paths.
 - Clear display of task progress, diagnostics, and errors.
 - Support for inspecting and organizing project assets used by tiptoi content workflows.
-- Safer handling of source and output directories by keeping generated files separate from originals.
 - Cross-platform documentation for macOS, Windows, and Linux.
 - A focused interface that can complement the upstream `tip-toi-reveng` tools rather than replacing them.
 
